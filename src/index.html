@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/src/images/favicon-32x32.png">
+
+  <link href="./output.css" rel="stylesheet">
+
+  <style>
+    #ratingBtn:active,
+  #ratingBtn:focus {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+  }
+  </style>
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  
+</head>
+
+<body  class="flex flex-col justify-center items-center  h-screen bg-[hsl(216,12,8%)]">
+
+  <main class="bg-[hsl(213,19%,18%)] p-6 max-w-xs  mx-auto rounded-lg">
+
+    <section id="ratingSection">
+<!-- Rating slate starts here!! -->
+     <div  class="flex items-center justify-center rounded-full w-8 h-8 bg-gray-700">
+      <img src="/src/images/icon-star.svg" class="w-4 h-4">
+    </div>
+      <h1 class="text-[hsl(0,0,100%)] font-semibold py-3">How did we do?</h1>
+      <p class="text-[hsl(217,12%,63%)] text-xs pb-5">
+        Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!
+      </p>
+
+<!-- Buttons For Ratings!! -->
+
+     <div class="flex justify-between pb-5">
+
+    <button type="button" id="ratingBtn" data-value="1" class="text-[hsl(217,12%,63%)] bg-gray-700 text-xs rounded-full w-8 h-8  flex items-center justify-center hover:bg-gray-100 active:bg-[hsl(25,97%,53%)]">
+        1
+    </button>
+    <button type="button" id="ratingBtn" data-value="2" class="text-[hsl(217,12%,63%)] bg-gray-700 text-xs rounded-full w-8 h-8  flex items-center justify-center hover:bg-gray-100 active:bg-[hsl(25,97%,53%)]">
+        2
+    </button>
+    <button type="button" id="ratingBtn" data-value="3" class="text-[hsl(217,12%,63%)] bg-gray-700 text-xs rounded-full w-8 h-8  flex items-center justify-center hover:bg-gray-100 active:bg-[hsl(25,97%,53%)]">
+        3
+    </button>
+    <button type="button" id="ratingBtn" data-value="4" class="text-[hsl(217,12%,63%)] bg-gray-700 text-xs rounded-full w-8 h-8  flex items-center justify-center hover:bg-gray-100 active:bg-[hsl(25,97%,53%)]">
+        4
+    </button>
+    <button type="button" id="ratingBtn" data-value="5" class="text-[hsl(217,12%,63%)] bg-gray-700 text-xs rounded-full w-8 h-8  flex items-center justify-center hover:bg-gray-100 active:bg-[hsl(25,97%,53%)]">
+        5
+    </button>
+
+    </div>
+
+<!-- Submit Button -->
+    <button id="submitBtn" class="text-xs w-full px-4 py-2 bg-[hsl(25,97%,53%)] text-white rounded-2xl hover:bg-[hsl(0,0%,100%)] hover:text-[hsl(25,97%,53%)]">
+      SUBMIT
+    </button>
+
+ <!-- Rating slate ends here!! -->
+    </section>
+
+    <!-- Thank you slate starts here!! -->
+    <section id="ThanksSection" class="hidden">
+      
+      <div  class="flex justify-center pb-3">
+      <img src="/src/images/illustration-thank-you.svg"  class="w-1/2 h-auto">
+    </div>
+
+    <div class="text-center">
+      <div class="text-xs text-[hsl(25,97%,53%)] inline-block  px-2 py-0.5 rounded-lg bg-gray-700">
+        You selected <span id="rateSelected">  </span> out of 5
+      </div>
+    </div>
+
+      <h1 class="text-center text-[hsl(0,0%,100%)] pt-6 pb-3 font-semibold">
+        Thank you!
+      </h1>
+
+      <p class="text-xs text-[hsl(217,12%,63%)] text-center">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </p>
+
+    </section>
+<!-- Thank you state end -->
+  </main>
+
+  <!-- Footer!! -->
+  <footer class="text-[11px] text-center pt-4 text-white">
+    Challenge by <a class="text-[hsl(25,97%,53%)]" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a  class="text-[hsl(25,97%,53%)]" href="#">Emjay</a>.
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
+  
+ 
+  
+
+ 
+
+  
+
+  
+  
+
+ 
+
+ 
+  
+
+  
+  
